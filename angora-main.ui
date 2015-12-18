@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>379</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ANGORA</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_7">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="dataLoadBut">
+             <property name="text">
+              <string>Choose File</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="dataPathLine">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_2">
+          <property name="frameShape">
+           <enum>QFrame::WinPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="text">
+                 <string>T-zero:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="text">
+                 <string>Period:</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QLineEdit" name="t0Text">
+                <property name="minimumSize">
+                 <size>
+                  <width>164</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>45000.357</string>
+                </property>
+                <property name="placeholderText">
+                 <string>Enter T0 number here...</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="periodText">
+                <property name="minimumSize">
+                 <size>
+                  <width>164</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="inputMask">
+                 <string/>
+                </property>
+                <property name="text">
+                 <string>0.628613</string>
+                </property>
+                <property name="placeholderText">
+                 <string>Enter Period number here...</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="minimumSize">
+           <size>
+            <width>500</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <widget class="QPushButton" name="calcPlotBut">
+           <property name="geometry">
+            <rect>
+             <x>6</x>
+             <y>18</y>
+             <width>481</width>
+             <height>32</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Calculate and Plot</string>
+           </property>
+          </widget>
+          <widget class="QFrame" name="frame_7">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>60</y>
+             <width>500</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QFrame" name="frame_6">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-12</y>
+              <width>151</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Choose Effect</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="liteRBut">
+               <property name="text">
+                <string>Third Body - LiTE</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="magneticRBut">
+               <property name="text">
+                <string>Magnetic Activtiy</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="apsidalRBut">
+               <property name="text">
+                <string>Apsidal Motion</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="massRBut">
+               <property name="text">
+                <string>Mass Transfer</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QFrame" name="frame_8">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>70</y>
+              <width>191</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QPushButton" name="solveBut">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="geometry">
+              <rect>
+               <x>4</x>
+               <y>-3</y>
+               <width>181</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Solve</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QFrame" name="frame_9">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>-10</y>
+              <width>121</width>
+              <height>111</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Choose Method</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="mcmcCheck">
+               <property name="text">
+                <string>MCMC</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="lmCheck">
+               <property name="text">
+                <string>LM</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QFrame" name="frame_10">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>-10</y>
+              <width>191</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="label_5">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>10</y>
+               <width>56</width>
+               <height>13</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Weigths:</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="ccdWLine">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>30</y>
+               <width>51</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="pgWLine">
+             <property name="geometry">
+              <rect>
+               <x>70</x>
+               <y>30</y>
+               <width>51</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>0.5</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="visWLine">
+             <property name="geometry">
+              <rect>
+               <x>130</x>
+               <y>30</y>
+               <width>51</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>0.1</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_6">
+             <property name="geometry">
+              <rect>
+               <x>15</x>
+               <y>53</y>
+               <width>33</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>CCD</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_7">
+             <property name="geometry">
+              <rect>
+               <x>75</x>
+               <y>53</y>
+               <width>43</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Photo.</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_8">
+             <property name="geometry">
+              <rect>
+               <x>135</x>
+               <y>53</y>
+               <width>43</width>
+               <height>15</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Visual</string>
+             </property>
+            </widget>
+           </widget>
+           <zorder>frame_8</zorder>
+           <zorder>frame_9</zorder>
+           <zorder>frame_6</zorder>
+           <zorder>frame_10</zorder>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="dataTable">
+      <property name="verticalScrollMode">
+       <enum>QAbstractItemView::ScrollPerItem</enum>
+      </property>
+      <property name="showGrid">
+       <bool>true</bool>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>838</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>dataLoadBut</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>dataLoadGui()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>79</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>29</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>calcPlotBut</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>calcPlot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>456</x>
+     <y>85</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>36</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>solveBut</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>askSolve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>783</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>833</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>dataLoadGui()</slot>
+  <slot>calcPlot()</slot>
+  <slot>askSolve()</slot>
+ </slots>
+</ui>
