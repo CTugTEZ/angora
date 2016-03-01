@@ -6,6 +6,11 @@ Created on Wed Nov 11 15:47:05 2015
 """
 
 import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_qt4agg import (
+    FigureCanvasQTAgg as FigureCanvas,
+    NavigationToolbar2QT as NavigationToolbar)
 
 pvisEpoch = []
 pvisCalc = []
@@ -27,8 +32,7 @@ sphoCalc = []
 
 
 def plot(roundEpoch, oc, minType, method,path):
-    plt.close()
-    
+
     for i in range (len(minType)):
         if (minType[i] == 1) or (minType[i] == "p") or (minType[i] == "P"):
             if (method[i] == "vis"):
@@ -52,8 +56,6 @@ def plot(roundEpoch, oc, minType, method,path):
                 sphoEpoch.append(roundEpoch[i])
                 sphoCalc.append(oc[i])
                      
-                     
-         
     plt.plot(pvisEpoch, pvisCalc, 'b.',label="1. Visual")
     plt.plot(pccdEpoch, pccdCalc, 'b*',label="1. CCD")
     plt.plot(pphoEpoch, pphoCalc, 'b+',label="1. Photometric")
